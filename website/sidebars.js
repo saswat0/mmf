@@ -31,5 +31,6 @@ module.exports = {
       'challenges/hateful_memes_challenge',
       'challenges/other_challenges',
     ],
+    Projects: ['projects/m4c'],
   },
 };

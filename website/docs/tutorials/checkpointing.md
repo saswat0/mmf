@@ -48,7 +48,6 @@ run_type=train_val checkpoint.resume_pretrained=True checkpoint.resume_zoo=visua
 
 After running the training our model will be saved in `./save/<experiment_name>/visual_bert_final.pth`. Replace `./save` with `env.save_dir` if overriden. This will be the directory structure:
 
-
 ```
 ├── best.ckpt
 ├── config.yaml
@@ -69,7 +68,6 @@ run_type=train_val checkpoint.resume_pretrained=True checkpoint.resume_file=<pat
 ```
 
 `checkpoint.resume_file` can also be used when loading a model file for evaluation or generating predictions. We will see more example usage of this later.
-
 
 ## Resuming training
 
@@ -119,6 +117,5 @@ We will next load the trained model to generate prediction results:
 mmf_predict config=projects/visual_bert/configs/hateful_memes/defaults.yaml model=visual_bert dataset=hateful_memes \
 run_type=test checkpoint.resume_file=<path_to_finetuned_model>
 ```
-
 
 This will generate a submission file in csv format that can be used for submission to the Hateful Memes challenge.
