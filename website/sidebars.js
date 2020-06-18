@@ -19,12 +19,14 @@ module.exports = {
     Notes: [
       'notes/concepts',
       'notes/configuration',
+      'notes/dataset_zoo',
+      'notes/model_zoo',
       'notes/pretrained_models',
       'notes/projects',
     ],
     Tutorials: [
       'tutorials/dataset',
-      'tutorials/late_fusion',
+      'tutorials/concat_bert',
       'tutorials/checkpointing',
     ],
     Challenges: [
@@ -32,5 +34,6 @@ module.exports = {
       'challenges/textvqa_challenge',
       'challenges/vqa_challenge',
     ],
+    Projects: ['projects/m4c'],
   },
 };
